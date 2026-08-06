@@ -1,125 +1,371 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jorge Rosales | Portfolio </title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="copie"
+    content="Portfolio de Jorge Rosales - Programador, líder técnico y creador de contenido. Proyectos en Magic, OH, Python y más.">
+  <meta name="keywords"
+    content="Jorge Rosales, Rockodev04, programador, portfolio, BMO, Adventure Time, desarrollo web, ciberseguridad">
+  <meta name="author" content="Jorge Rosales">
+  <meta property="og:title" content="Jorge Rosales | Portfolio">
+  <meta property="og:copie"
+    content="Programador y líder técnico. Proyectos, cursos de YouTube y experiencia laboral.">
+  <meta property="og:type" content="website">
+  <title>Jorge Rosales | Portfolio</title>
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Jorge Rosales</h1>
-    <button class="hamburger" id="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <nav id="nav-menu" aria-label="Menú principal" aria-label="Abrir menú" aria-expanded="false">
-      <a href="#hero">Acerca de mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Conéctate</a>
-    </nav>
-  </header>
-
   <main>
-    <section id="hero">
-      <h1>👋, soy Jorge Rosales</h1>
-      <h2>Líder técnico y programador</h2>
-      <p>Cuento con experiencia en optimizaciones de código y te puedo ayudar en materia de ciberseguridad, gracias por tú visita y te deseo
-        <strong>#FelicesPrácticasInformáticas.</strong></p>
-
-      <div class="experience-section">
-        <h2>Mi experiencia</h2>
-        <div class="experience-grid">
-          <div class="experience-card">
-            <h3>En Navegaag</h3>
-            <p><strong>Actualmente soy gerente en ciberseguridad y mejoras de programación</strong> ayudo a remediar vulnerabilidades de los sistemas informáticos y estudio las posibles mejoras por medio de estructuras de datos y algoritmos.</p>
-          </div>
-          <div class="experience-card">
-            <h3>En SpartanGeek</h3>
-            <p><strong>Fui diseñador UX/UI y SEO</strong>  Colaboré en la optimización del ecommerce propio de la startup
-              utilizando Craft como gestor de contenido  y Twig como  lenguaje.</p>
-          </div>
-          <div class="experience-card">
-            <h3>En Softtek</h3>
-            <p><strong>Estuve como consultor vulnerabilidades</strong>  Colaboré con Coppel utilizando Checkmarks para remediar las vulnerabilidades de su código.</p>
-          </div>
-          <div class="experience-card">
-            <h3>En URBINA SERVICES</h3>
-            <p><strong>Mi segunda oportunidad como programador junior</strong> profundice los conocimientos técnicos necesarios tanto para maquetación web y programación con PHP.</p>
-          </div>
-          <div class="experience-card">
-            <h3>En SLM</h3>
-            <p><strong>Tuve mi primer experiencia como programador junior</strong> y  aprendí a usar Bootstap y PHP para generar un carrito de compras para un ecommerce.</p>
-          </div>
-          <div class="experience-card">
-            <h3>En Servicio Computacional y Electrónico "NIBLE"</h3>
-            <p><strong>Mis inicios fueron como técnico reparador</strong>  durante 4 años puli todo el conocimiento técnico en repación de equipos de
-              telefonía móvil, computadoras y laptops.</p>
-          </div>
-        </div>
+    <header class="bmo-header" id="hero">
+      <div class="bmo-screen">
+        <h1 class="hero__title">👋 a todos, Soy Jorge Rosales.</h1>
+        <p class="hero__copy">Soy ingeniero en tecnologías computacionales, programador y líder técnico.</p>
       </div>
-      <a href="#proyectos" class="scroll-down">
-        <span>&darr;</span>
-      </a>
+    </header>
+
+    <nav class="menu" aria-label="Navegación principal">
+      <button class="menu__toggle" id="menu-toggle" aria-label="Abrir menú">
+        ☰ MENÚ
+      </button>
+      <div class="menu__links" id="menu-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#about">Acerca de mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#contact">Contáctame</a>
+      </div>
+    </nav>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <article class="about__copies">
+        <h2 class="about__title" id="about-title">Acerca de mí</h2>
+        <p class="about__copie">Me considero una persona con mente inquieta puesto que me gusta aprender temas complejos
+          para poderlos explicar de manera sencilla, además de que me gusta dibujar, diseñar, leer e investigar.</p>
+
+        <h3 class="about__subtitle">Te comparto mi experiencia laboral hasta el momento</h3>
+        <ol class="about__experience">
+          <li class="experience__item">
+            <span class="experience__company">Navegaag - Gerente de ciberseguridad y optimización de código</span>
+            <span class="experience__time">2024 - Presente</span>
+          </li>
+          <li class="experience__item">
+            <span class="experience__company">SpartanGeek - Programador web</span>
+            <span class="experience__time">2024 - 2025</span>
+          </li>
+          <li class="experience__item">
+            <span class="experience__company">Softtek - Consultor de ciberseguridad</span>
+            <span class="experience__time">2022 - 2023</span>
+          </li>
+          <li class="experience__item">
+            <span class="experience__company">SLM - Programador web jr</span>
+            <span class="experience__time">2019 - 2020</span>
+          </li>
+        </ol>
+      </article>
     </section>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="assets/images/tetris.jpg" alt="Tetris" title="Aprende a programar un tetris">
-          <div class="project-card-content">
-            <p>Por medio de HTML, CSS y JavaScript; te enseño a crear un tetris</p>
-            <a href="https://youtu.be/BbhJ7_5OwmE?si=ZUfHq85-xEzVcId-">Ver Vídeo</a>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="projects__header">
+        <h2 class="projects__title" id="projects-title">Proyectos</h2>
+        <p class="projects__copie">En está sección podrás ver mi código en acción por medio de un vídeo demostrativo y también puedes darle un vistazo a mi código.</p>
+      </div>
+      <div class="projects__grid">
+        <article class="projects__card">
+          <div class="project__image-wrap">
+            <img src="Magic.jpg" alt="Proyecto Magic - Framework experimental" class="project--image" loading="lazy">
           </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/images/page.jpg" alt="Page" title="Aprende a hacer una página web">
-          <div class="project-card-content">
-            <p>Aprende a hacer una página web responsiva con HTML5 y CSS3</p>
-            <a href="https://youtu.be/T7smxTvBV50?si=Pne40ZQo5yH-CYNj">Ver Vídeo</a>
+          <div class="projects__copies">
+            <h3 class="project__title">Magic</h3>
+            <p class="project__copy">Creé un framework experimental usando Bun, TypeScript y evitando usar dependencias
+              de terceros.</p>
           </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/images/cart.jpg" alt="Carrito de compras con PHP y JavaScript"
-            title="Carrito de compras con PHP y JavaScript">
-          <div class="project-card-content">
-            <p>Con PHP y JavaScript te enseño a generar un carrito de compras.</p>
-            <a href="https://youtu.be/4N--saflp2c?si=Oz06-CnsvrJfd6u-">Ver Vídeo</a>
+          <div class="projects__links">
+            <a href="https://youtu.be/IJYnPsWM2bE?si=01lZsBh3QQPtnnWw" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--cross" aria-label="YouTube" title="Ver video de Magic en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://github.com/rockodev04/Magic-" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--circle" aria-label="GitHub" title="Ver repositorio de Magic en GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
           </div>
-        </div>
-        <div class="project-card">
-          <img src="assets/images/python.jpg" alt="Aprende python" title="Aprende lógica de porgramación con Python">
-          <div class="project-card-content">
-            <p>Aprende a lógica de programación con Python</p>
-            <a href="https://www.youtube.com/watch?v=IbcCcQa0vLc&list=PLfioONCVyn-YhHsM0moSPAJCUhALsKoHu">Ver Vídeo</a>
+        </article>
+
+        <article class="projects__card">
+          <div class="project__image-wrap">
+            <img src="Oh.jpg" alt="Proyecto OH - Plataforma con Magic" class="project--image" loading="lazy">
           </div>
-        </div>
+          <div class="projects__copies">
+            <h3 class="project__title">OH</h3>
+            <p class="project__copy">Plataforma creada con mi framework experimental Magic.</p>
+          </div>
+          <div class="projects__links">
+            <a href="https://youtu.be/pvjQMb21o3s?si=Z7ns5CiZHwiEAhuG" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--cross" aria-label="YouTube" title="Ver video de OH en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://github.com/rockodev04/oh" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--circle" aria-label="GitHub" title="Ver repositorio de OH en GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <div class="project__image-wrap">
+            <img src="Welcome.jpg" alt="Welcome to Python - Guía práctica" class="project--image" loading="lazy">
+          </div>
+          <div class="projects__copies">
+            <h3 class="project__title">Welcome to Python</h3>
+            <p class="project__copy">Guía práctica para usar python.</p>
+          </div>
+          <div class="projects__links">
+            <a href="https://www.youtube.com/watch?v=fbGUpMO0oTw" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--cross" aria-label="YouTube" title="Ver video de Welcome to Python en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://rockodev04.github.io/python/" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--circle" aria-label="GitHub"
+              title="Ver proyecto Welcome to Python en GitHub Pages">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <div class="project__image-wrap">
+            <img src="Whats.jpg" alt="What's the Trick - Mensaje para programadores" class="project--image"
+              loading="lazy">
+          </div>
+          <div class="projects__copies">
+            <h3 class="project__title">What's the Trick</h3>
+            <p class="project__copy">Un sincero mensaje de mí hacia todos los programadores que se sienten mal ante los
+              cambios actuales en el mundo informático.</p>
+          </div>
+          <div class="projects__links">
+            <a href="https://www.youtube.com/watch?v=fbGUpMO0oTw" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--cross" aria-label="YouTube" title="Ver video de What's the Trick en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://rockodev04.github.io/whatsthetrick/" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--circle" aria-label="GitHub" title="Ver proyecto What's the Trick en GitHub Pages">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <div class="project__image-wrap">
+            <img src="Only.jpg" alt="Only Twenty Five - Ejercicios TypeScript" class="project--image" loading="lazy">
+          </div>
+          <div class="projects__copies">
+            <h3 class="project__title">Only twenty five</h3>
+            <p class="project__copy">Guía de estudio con veinticinco ejercicios para que domines estructuras de datos,
+              algoritmos con TypeScript.</p>
+          </div>
+          <div class="projects__links">
+            <a href="https://www.youtube.com/watch?v=fbGUpMO0oTw" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--cross" aria-label="YouTube" title="Ver video de Only Twenty Five en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://rockodev04.github.io/onlytwentyfive/" target="_blank" rel="noopener noreferrer"
+              class="bmo-btn bmo-btn--circle" aria-label="GitHub" title="Ver guía Only Twenty Five en GitHub Pages">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="contacto">
-      <div class="contact-image">
-        <img src="assets/images/me.jpg" alt="Imagen de contacto">
+    <!-- YouTube Section -->
+    <section class="youtube" id="youtube" aria-labelledby="youtube-title">
+      <div class="youtube__header">
+        <h2 class="youtube__title" id="youtube-title">Te presento mi canal de YouTube <span>Rockodev04</span></h2>
+        <p class="youtube__copie">Un espacio donde comparto mi conocimiento de manera sencilla con muletillas al hablar y uno que otro loop.</p>
       </div>
-      <div class="contact-content">
-        <h2>Conéctate</h2>
-        <div class="contact-links">
-          <a href="https://github.com/Junkdog-04" target="_blank" rel="noreferrer" rel="noopener"
-            title="Visita mi GitHub">GitHub</a>
-          <a href="https://www.linkedin.com/in/jorge-alexis-rosales-morales/" target="_blank" rel="noreferrer"
-            rel="noopener" title="Visita mi perfil en LinkedIn">LinkedIn</a>
+      <div class="youtube__grid">
+        <article class="youtube__card">
+          <div class="youtube__image-wrap">
+            <img src="Niblecast.jpg" alt="Niblecast - Serie de videos" class="youtube--image" loading="lazy">
+          </div>
+          <div class="youtube__copies">
+            <h3 class="youtube__card-title">Niblecast</h3>
+            <p class="youtube__copy">Una lista de reproducción a manera de podcast donde te platico mis vivencias de la vida y programación.</p>
+          </div>
+          <div class="youtube__links">
+            <a href="https://www.youtube.com/watch?v=hyRluDGJkG8&list=PLfioONCVyn-ZfmY1HXNJN0WEZuRp26ZgD"
+              target="_blank" rel="noopener noreferrer" class="bmo-btn bmo-btn--triangle" aria-label="YouTube"
+              title="Ver lista de reproducción Niblecast">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="youtube__card">
+          <div class="youtube__image-wrap">
+            <img src="Alquímia.jpg" alt="Alquimía de código - Curso de lógica" class="youtube--image" loading="lazy">
+          </div>
+          <div class="youtube__copies">
+            <h3 class="youtube__card-title">Alquimía de código.</h3>
+            <p class="youtube__copy">En este curso te ayudo a entender mejor la lógica de programación y también te hablo de como cuidar tus manos.</p>
+          </div>
+          <div class="youtube__links">
+            <a href="https://www.youtube.com/watch?v=CDfe6XXRD6U&list=PLfioONCVyn-btFWbdCv61b78AVmsPYIar"
+              target="_blank" rel="noopener noreferrer" class="bmo-btn bmo-btn--triangle" aria-label="YouTube"
+              title="Ver curso Alquimía de código en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="youtube__card">
+          <div class="youtube__image-wrap">
+            <img src="Page.jpg" alt="Page - Curso de diseño web" class="youtube--image" loading="lazy">
+          </div>
+          <div class="youtube__copies">
+            <h3 class="youtube__card-title">Page.</h3>
+            <p class="youtube__copy">Curso de diseño de páginas web para principiantes usando HTML5, CSS3 y JavaScript.</p>
+          </div>
+          <div class="youtube__links">
+            <a href="https://www.youtube.com/watch?v=T7smxTvBV50&list=PLfioONCVyn-bpk26q3DfPNux-5QH-WYoM"
+              target="_blank" rel="noopener noreferrer" class="bmo-btn bmo-btn--triangle" aria-label="YouTube"
+              title="Ver curso Page en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="youtube__card">
+          <div class="youtube__image-wrap">
+            <img src="Elephants.jpg" alt="Elphant[S] - Curso de PHP" class="youtube--image" loading="lazy">
+          </div>
+          <div class="youtube__copies">
+            <h3 class="youtube__card-title">Elphant[S].</h3>
+            <p class="youtube__copy">Curso práctico para iniciar con el lenguaje PHP.</p>
+          </div>
+          <div class="youtube__links">
+            <a href="https://www.youtube.com/watch?v=Zwg-WOLHTVo&list=PLfioONCVyn-acaDe6h_hUwrOp9ZFNyX1t&index=4"
+              target="_blank" rel="noopener noreferrer" class="bmo-btn bmo-btn--triangle" aria-label="YouTube"
+              title="Ver curso Elphant[S] en YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__header">
+        <h2 class="contact__title" id="contact-title">¡Si no me encuentras mándame,<span>un mail</span>!</h2>
+        <p class="contact__copie">¿Tienes algún proyecto en mente, una consulta técnica o simplemente quieres
+          decir hola?.
+          Puedes contactarme directamente en mis redes sociales ó copiar mi dirección de correo electrónico.
+        </p>
+      </div>
+      <div class="contact__card">
+        <img src="me.jpg" alt="Jorge Rosales alias Rockodev04" class="contact__image" loading="lazy">
+        <div class="contact__links">
+          <a href="https://www.linkedin.com/in/jorge-alexis-rosales-morales/" target="_blank" rel="noopener noreferrer"
+            class="bmo-btn bmo-btn--triangle bmo-btn--icon" aria-label="LinkedIn" title="Visitar perfil de LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="https://github.com/rockodev04" target="_blank" rel="noopener noreferrer"
+            class="bmo-btn bmo-btn--dot bmo-btn--icon" aria-label="GitHub" title="Visitar perfil de GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
         </div>
+        <button type="button" class="contact__copy-btn" data-email="jorge.19930304@hotmail.com"
+          aria-label="Copiar correo electrónico al portapapeles"
+          title="Haz clic para copiar la dirección de correo">Copiar correo</button>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Jorge Rosales 2025 ©</p>
+    <p>Design by Rockodev04</p>
+    <p class="footer__links">
+      <a href="https://mx.linkedin.com/in/jorge-alexis-rosales-morales" target="_blank" rel="noopener noreferrer"
+        class="bmo-btn bmo-btn--cross" aria-label="LinkedIn" title="Perfil de LinkedIn de Jorge Rosales">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@Rockodev04" target="_blank" rel="noopener noreferrer"
+        class="bmo-btn bmo-btn--triangle" aria-label="YouTube" title="Canal oficial de YouTube Rockodev04">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+      <a href="https://github.com/rockodev04" target="_blank" rel="noopener noreferrer" class="bmo-btn bmo-btn--circle"
+        aria-label="GitHub" title="Perfil de GitHub Rockodev04">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+      </a>
+    </p>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
